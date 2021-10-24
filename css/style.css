@@ -81,6 +81,34 @@ h1 {
   top: 0;
 }
 
+.mode-radio-buttons {
+  display: block;
+  color: #fff;
+  margin: auto;
+  align-items: center;
+  width: fit-content;
+  font-size: 24px;
+  margin-top: 35px;
+}
+
+.mode-textarea {
+  display: block;
+  align-items: center;
+  width: 100px;
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+.textarea-block {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 35px;
+  width: fit-content;
+  align-items: center;
+  color: #fff;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -90,6 +118,10 @@ h1 {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.radio-button {
+  margin-left: 25px;
 }
 
 .active, .dot:hover {
@@ -111,4 +143,29 @@ h1 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media(max-width: 500px) {
+  audio {
+    width: 250px;
+  }
+
+  .mode-radio-buttons {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+    font-size: 24px;
+    margin-top: 35px;
+  }
+
+  .radio-button {
+    margin: 0;
+  }
+
+  .radio-button2 {
+    margin-top: 20px;
+  }
 }

@@ -44,7 +44,20 @@
         <div class="audio-container">
             <audio controls="controls" src="src/audio/audio.mp3"></audio>
         </div>
-       
+
+        <form class="mode">
+            <span class="mode-radio-buttons">Переключение</span>
+
+            <div class="mode-radio-buttons">
+                <input class="radio-button" onclick="handOnClick()" name="r1" type="radio" value="hand"> Ручное
+                <input class="radio-button" onclick="showSlides()" name="r1" type="radio" value="auto"> Автоматическое
+            </div>
+
+            <div class="textarea-block">
+                <textarea name="time" id="time" class="mode-textarea" cols="1" rows="1"></textarea>
+                <span> секунд - время переключения</span>
+            </div>
+        </form>
     </div>
 
     <script src="js/script.js"></script>
